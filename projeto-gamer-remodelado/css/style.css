@@ -219,7 +219,6 @@ main .jogos .jogos-flex {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
-        border: 3px dotted yellowgreen;
     }
 
     /* HEADER  */
@@ -245,7 +244,6 @@ main .jogos .jogos-flex {
         width: 440px;
         height: 50px;
         flex-direction: row;
-        background-color: red;
     }
 
 
@@ -270,7 +268,10 @@ main .jogos .jogos-flex {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
     }
+    
 
     /* HEADER  */
     header {
@@ -278,14 +279,24 @@ main .jogos .jogos-flex {
         height: 140px;
     }
 
+/* header top */
+
     header .header-top {
         display: block;
+        border-bottom: 2px solid #F9AA01;
+        height: 50px;
+    }
+
+    header .header-top .midias-sociais{
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     header .header-top .contatos {
         display: flex;
         justify-content: space-between;
-        border: 1px solid white;
         width: 415px;
         font-size: 14px;
         font-weight: 400;
@@ -299,12 +310,20 @@ main .jogos .jogos-flex {
         gap: 10px;
     }
 
+/* esconde elementos desnecesarios */
+
     header .menu-hamburger,
     header .menu-pontinhos,
     header .header-bottom nav .phone,
     header .header-bottom nav .email,
     header .header-bottom nav .midias-sociais {
         display: none;
+    }
+
+/* header bottom */
+
+    header .header-bottom {
+        height: 90px;
     }
 
     header .header-bottom img.logo {
@@ -329,8 +348,30 @@ main .jogos .jogos-flex {
     header .header-bottom .menu-usuarios {
         position: static;
         flex-direction: row;
-        width: 180px;
+        justify-content: space-between;
+        width: 120px;
         height: 50px;
         background-color: transparent;
+    }
+
+    /* main */
+
+    main {
+        margin-top: 0;
+    }
+
+    /* banner */
+
+    /* mudar a imagem do banner */
+
+    .banner {
+        background-image: url(../assets/images/fundo-banner-desktop.png);
+        background-size: cover;
+        height: 722px;
+        background-position: top;
+    }
+
+    main .banner h1 {
+        font-size: 80px;
     }
 }
