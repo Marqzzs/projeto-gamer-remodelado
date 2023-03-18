@@ -228,6 +228,20 @@ footer {
     background-size: contain;
 }
 
+footer .titulos-footer > h3 {
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+}
+
+footer .titulos-footer > hr{
+    width: 102px;
+    height: 2px;
+    background-color: #F9AA01;
+    border: none;
+    border-radius: 4px;
+
+}
+
 footer #sobre {
     width: 100%;
     height: 304px;
@@ -251,56 +265,65 @@ footer #midias-socias-footer {
     justify-content: space-around;
 }
 
-/* Tablets >= 768px
-@media screen and (min-width: 768px) {}
+/* ****Links uteis */
 
-/* Desktops >= 1200px*/
+footer div #links-uteis {
+    height: 191px;
+    margin-top: 120px;
+}
 
-/* @media screen and (min-width: 1200px) {
-    .layout-grid {
-        width: 100%;
-        max-width: 1200px;
-    } */
+footer .menu-footer{
+    margin-top: 47px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
-/* HEADER  */
-/* header {
-        position: static;
-        height: 140px;
-    }
+footer .menu-footer  li {
+    list-style: none;
+}
+footer .menu-footer  li::before {
+    content: "-";
+    color: #F9AA01;
+    margin-left: -1px;
+}
 
-    header .menu-hamburger,
-    header .menu-pontinhos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .email,
-    header .header-bottom nav .midias-sociais {
-        display: none;
-    }
+footer .menu-footer  li > a{
+    text-decoration: none;
+    color: white;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
 
-    header .header-bottom img.logo {
-        width: 200px;
-    }
+footer #contatos {
+    height: 260px;
+}
 
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        flex-direction: row;
-    }
+footer #contatos .titulos-footer > hr {
+    margin-bottom: 47px;
+}
 
+footer #contatos .titulos-contatos {
+    color: #F9AA01;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
 
-    header .header-bottom .menu-usuarios {
-        position: static;
-        flex-direction: row;
-        width: 180px;
-        height: 50px;
-        background-color: transparent;
-    } */
+footer #contatos > p {
+    color: white;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
 
-/* MAIN */
-/* main {
-        margin-top: 0;
-    }
-}  */
+}
+
+footer .footer-top .frm-news >form {
+    width: 333px;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6)rgba(239, 239, 239, .2));
+}
+
 
 
 /* **********************MEDIAS QUERES************************** */
