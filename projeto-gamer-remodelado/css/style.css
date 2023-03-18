@@ -97,8 +97,6 @@ header .header-bottom nav {
     padding-bottom: 20px;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    border:  1px solid white;
-
     transition: left 0.4s ease-out;
 }
 
@@ -153,13 +151,10 @@ header .header-bottom .menu-usuarios {
     height: 170px;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    border: 1px solid white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
     transition: right 0.4s;
 }
 
