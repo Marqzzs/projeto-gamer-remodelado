@@ -228,12 +228,12 @@ footer {
     background-size: contain;
 }
 
-footer .titulos-footer > h3 {
+footer .titulos-footer>h3 {
     font-family: TitilliumWeb-Black;
     font-size: 30px;
 }
 
-footer .titulos-footer > hr{
+footer .titulos-footer>hr {
     width: 102px;
     height: 2px;
     background-color: #F9AA01;
@@ -251,7 +251,12 @@ footer #sobre {
     align-items: center;
 }
 
-footer #sobre > img {width: 110px; height: 32px;} /*logotipo footer*/
+footer #sobre>img {
+    width: 110px;
+    height: 32px;
+}
+
+/*logotipo footer*/
 
 footer #sobre p {
     font-family: Quicksand;
@@ -272,25 +277,26 @@ footer div #links-uteis {
     margin-top: 120px;
 }
 
-footer .menu-footer{
+footer #menu-footer {
     margin-top: 47px;
-    width: 100%;
+    width: 325px;
+    height: 60px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-footer .menu-footer  li {
+footer #menu-footer li {
     list-style: none;
 }
-footer .menu-footer  li::before {
+
+footer #menu-footer li::before {
     content: "-";
     color: #F9AA01;
     margin-left: -1px;
 }
 
-footer .menu-footer  li > a{
+footer #menu-footer li>a {
     text-decoration: none;
     color: white;
     font-family: TitilliumWeb-Bold;
@@ -299,9 +305,10 @@ footer .menu-footer  li > a{
 
 footer #contatos {
     height: 260px;
+    margin-top: 47px;
 }
 
-footer #contatos .titulos-footer > hr {
+footer #contatos .titulos-footer>hr {
     margin-bottom: 47px;
 }
 
@@ -311,17 +318,56 @@ footer #contatos .titulos-contatos {
     font-size: 16px;
 }
 
-footer #contatos > p {
+footer #contatos>p {
     color: white;
     font-family: TitilliumWeb-Bold;
     font-size: 16px;
 
 }
 
-footer .footer-top .frm-news >form {
-    width: 333px;
+input,
+button {
+    width: 100%;
+    margin-top: 47px;
     height: 40px;
-    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6)rgba(239, 239, 239, .2));
+    border-radius: 8px;
+}
+
+#newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    backdrop-filter: blur(60px);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+#newsletter input::placeholder {
+    color: white;
+}
+
+#newsletter button {
+    background-color: #F9AA01;
+}
+
+
+/* *******footer bottom*********** */
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    margin-top: 100px;
+    position: relative;
+}
+
+footer .image-subir {
+    position: absolute;
+    right: 15px;
+    bottom: 70px;
+
 }
 
 
@@ -463,4 +509,38 @@ footer .footer-top .frm-news >form {
         width: 556px;
         height: 313px;
     }
+
+    /* *******footer********** */
+
+    footer #sobre img {
+        height: 57px;
+        width: 196px;
+    }
+
+    footer #sobre {
+        width: 325px;
+        height: 267px;
+        margin-top: 100px;
+        border: 1px solid white;
+    }
+
+    footer #sobre #midias-socias-footer {
+        width: 205px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: none;
+        
+    }
+    footer #links-uteis {
+        margin-top: 100px;
+    }
+    footer #menu-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        
+
+    }
+
 }
