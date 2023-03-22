@@ -163,20 +163,17 @@ header .header-bottom .menu-usuarios {
     transition: right 0.4s;
 }
 
-/* main */
+/* ********main********* */
 
-.login {
-    width: 100%;
-    height: 687px;
-    background-image: url(../assets/images/login/fundo-login.png);
+main .cadastro-de-equipes {
+    background-image: url(../assets/images/cadastro-de-equipes/banner-cadastro-de-equipes-mobile.png);
+    height: 1253px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-
 }
 
-.forms {
+main .cadastro {
     width: 335px;
     height: 462px;
     /* background-image: linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .4)); */
@@ -197,22 +194,23 @@ header .header-bottom .menu-usuarios {
     align-items: center;
 }
 
-main .titulo-login {
+main .titulo-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main .titulo-login>h1 {
+main .titulo-cadastro > h1 {
     font-family: TitilliumWeb-Black;
     font-size: 28px;
+    text-transform: uppercase;
 }
 
-main .titulo-login>hr {
+main .titulo-cadastro> hr {
     border: none;
     background-color: #F9AA01;
     height: 3px;
-    width: 90px;
+    width: 250px;
 }
 
 main .form {
@@ -263,6 +261,12 @@ main input::placeholder {
     color: white;
 }
 
+main .selecionar-imagem > button {
+    width: 128px;
+    height: 40px;
+    background-color: #D9D9D9;
+}
+
 main button {
     background-color: #F9AA01;
     border: none;
@@ -273,6 +277,9 @@ main button {
     margin: 0;
 }
 
+
+
+/* *******footer******* */
 /*footer*/
 
 footer {
@@ -423,193 +430,5 @@ footer .image-subir {
     position: absolute;
     right: 15px;
     bottom: 70px;
-
-}
-
-
-/* **********************MEDIAS QUERES************************** */
-/* Desktops >= 1200px*/
-@media screen and (min-width: 1200px) {
-    .layout-grid {
-        width: 100%;
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    /* HEADER  */
-    header {
-        position: static;
-        height: 140px;
-    }
-
-    /* header top */
-
-    header .header-top {
-        display: block;
-        border-bottom: 2px solid #F9AA01;
-        height: 50px;
-    }
-
-    header .header-top .midias-sociais {
-        width: 120px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    header .header-top .contatos {
-        display: flex;
-        justify-content: space-between;
-        width: 415px;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: Inter;
-    }
-
-    header .header-top .contatos>div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-    }
-
-    /* esconde elementos desnecesarios */
-
-    header .menu-hamburger,
-    header .menu-pontinhos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .email,
-    header .header-bottom nav .midias-sociais {
-        display: none;
-    }
-
-    /* header bottom */
-
-    header .header-bottom {
-        height: 90px;
-    }
-
-    header .header-bottom img.logo {
-        width: 200px;
-    }
-
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        padding: 0;
-        flex-direction: row;
-        align-items: center;
-        background-color: none;
-    }
-
-    header .header-bottom nav>a {
-        border: none;
-        font-size: 14px;
-    }
-
-    header .header-bottom nav>:hover {
-        background-color: transparent;
-        color: #F9AA01;
-        transition: .3s;
-    }
-
-    header .header-bottom .menu-usuarios {
-        position: static;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 120px;
-        height: 50px;
-        background-color: transparent;
-    }
-
-    /* ****main****** */
-
-    main .login {
-        background-image: url(../assets/images/login/fundo-login-pc.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    main .forms {
-        width: 800px;
-        height: 520px;
-        position: relative;
-        top: 80px;
-        align-content: center;
-    }
-
-    main .titulo-login > h1 {
-        font-family: TitilliumWeb-Black;
-        font-size: 28px;
-        text-transform: uppercase;
-    }
-
-    main .titulo-login>hr {
-        width: 106px;
-    }
-
-    main .caixinha-imput {
-        width: 565px;
-        height: 40px;
-        padding: 5px 10px;
-        gap: 10px;
-    }
-
-    main button {
-        width: 201px;
-        height: 40px;
-    }
-
-
-
-    /* *******footer********** */
-
-    footer #sobre img {
-        height: 57px;
-        width: 196px;
-    }
-
-    footer #sobre {
-        width: 325px;
-        height: 267px;
-        margin-top: 100px;
-    }
-
-    footer #midias-socias-footer {
-        gap: 70px;
-    }
-
-    footer #midias-socias-footer img {
-        width: 100%;
-    }
-
-    footer #links-uteis {
-        margin-left: 100px;
-        position: relative;
-        bottom: 20px;
-        left: 10px;
-    }
-
-    footer #menu-footer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: 100%;
-    }
-
-    footer #contatos {
-        margin-top: 99px;
-        margin-right: 30px;
-    }
-
-    footer #newsletter {
-        margin-top: 85px;
-        margin-left: 20px;
-    }
 
 }

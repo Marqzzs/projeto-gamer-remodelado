@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro-de-equipes</title>
+    <link rel="stylesheet" href="css/cadastro-de-equipes.css">
 </head>
 
 <body>
@@ -97,31 +97,35 @@
             </div>
         </div>
     </header>
+
     <main>
-        <section class="login">
-            <div class="layout-grid forms">
-                <div class="titulo-login">
-                    <h1>login</h1>
+        <section class="cadastro-de-equipes">
+            <div class="layout-grid cadastro">
+                <div class="titulo-cadastro">
+                    <h1>Cadastro de equipes</h1>
                     <hr>
                 </div>
                 <form action="" class="form">
 
                     <div class="caixinha-imput">
-                        <img src="assets/icons/bonequinho-usuario.svg" alt="">
-                        <input class="imput" type="email" placeholder="Digite seu e-mail:">
+                        <input class="imput" type="text" placeholder="Digite o id da sua equipe:">
                     </div>
 
                     <div class="caixinha-imput">
-                        <img src="assets/icons/chave-da-senha.svg" alt="">
-                        <input class="imput" type="password" placeholder="Digite sua senha:">
+                        <input class="imput" type="text" placeholder="Digite o nome da sua equipe:">
                     </div>
-
                 </form>
-
-                <button>Logar</button>
+                <div class="selecionar-imagem">
+                    <button>Imagem da equipe</button>
+                    <p>Nenhuma imagem selecionada...</p>
+                </div>
+                <button>Cadastro</button>
             </div>
+
+
         </section>
     </main>
+
     <footer>
         <div class="layout-grid footer-top">
 
@@ -207,6 +211,7 @@
                 alt="icone para voltar ao top da pagina, indicado com a seta para cima">
         </div>
     </footer>
+
     <script>
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu");
