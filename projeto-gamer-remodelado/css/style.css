@@ -609,33 +609,39 @@ footer .image-subir {
         align-items: center;
     }
 
-    main .titulo-progamer {
-        width: 50%;
+    section.progamer .progamer-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
     }
-
-    main .titulo-progamer h2 {
-        font-size: 40px;
+    section.progamer .progamer-title {
         width: 100%;
     }
-
-    main .cards {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 80%;
-        height: 702px;
+    section.progamer h2 {
+        font-size: 2rem;
+        letter-spacing: 5px;
     }
 
-    main .killjoy {
-        margin: 0;
-        width:40%;
-        height: 100%;
+    section.progamer hr {
+        width: 35%;
     }
 
-    main .jinx {
-        margin: 0;
-        width:40%;
+    section.progamer .gamers {
+        height: 520px;
+        margin-right: 20px;
+        /* background: #EC4358; */
+    }
+
+    
+    section.progamer .progamer-flex .gamers>img {
         height: 100%;
+        width: auto;
+    }
+
+    section.progamer .progamer-flex .gamers #professores {
+        top: auto;
+        bottom: 90px;
     }
 
     /* *******footer********** */
