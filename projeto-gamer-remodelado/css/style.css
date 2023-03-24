@@ -219,96 +219,93 @@ main .jogos .jogos-flex {
 
 /* sessão progamer */
 
-main .progamer {
-    width: 100%;
-    height: 1535px;
+section.progamer {
+    /* apenas para visualizar o box, pois o fundo é transparente */
     background-color: #F9AA01;
 }
 
-main .titulo-progamer {
+section.progamer .progamer-flex {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-    height: 62px;
-    width: 336px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 20px;
 }
 
-main .h2-progamer {
+section.progamer h2 {
+    width: 100%;
+    margin-bottom: 20px;
     font-family: TitilliumWeb-Black;
-    font-size: 18px;
-    color: black;
-    margin-top: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 96px;
+    color: black;
+    text-align: center;
 }
 
-main .killjoy {
+section.progamer hr {
+    width: 50%;
+    margin: 0 auto 60px;
+    border: 1px solid #000;
+}
+
+/* efeito borda gradient */
+section.progamer .gamers {
+    /* para servir de referência ao absolute */
     position: relative;
-    top: 228px;
+    margin-bottom: 20px;
+    /* border: 1px solid #EC4358; */
 }
 
-main .card-killjoy {
-    width: 231px;
-    height: 300px;
+section.progamer .progamer-flex .gamers>img {
+    width: 314px;
+}
+
+
+section.progamer .progamer-flex .gamers #jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+section.progamer .progamer-flex .gamers #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+section.progamer .gamers .card-bkg .produto {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     align-items: center;
-
-    background:
-        linear-gradient(to right bottom, rgba(122, 49, 236, .3), rgba(47, 7, 109, .8)) padding-box,
-        /* fundo borda */
-        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
-    backdrop-filter: blur(8px);
-
-    border-image-slice: 1;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    
-    position: absolute;
-    right: 0px;
-    bottom: 79px;
-}
-
-main .card-killjoy p {
-    margin-left: 10px;
-    font-family: Quicksand;
-    font-size: 16px;
-}
-
-main .jinx {
-    position: relative;
-    top: 400px;
-}
-
-main .card-jinx {
-    width: 231px;
+    max-width: 231px;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    background:
-        linear-gradient(to right bottom, rgba(122, 49, 236, .3), rgba(47, 7, 109, .8)) padding-box,
-        /* fundo borda */
-        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
-    backdrop-filter: blur(8px);
-
-    border-image-slice: 1;
-    border: 1px solid transparent;
+    padding: 25px;
+    font-size: .8rem;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
     border-radius: 8px;
-    
-    position: absolute;
-    left: 0px;
-    bottom: 17px;
 }
 
-main .card-jinx p {
-    font-family: Quicksand;
-    font-size: 13px;
-    margin-left: 8px;
+section.progamer .card-bkg .produto h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: TitilliumWeb-Black;
+    /* text-shadow: 0 0 0px #fff; */
+    text-align: justify;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cards-progamer-layer .card-bkg .produto p {
+    font-family: Inter-Thin;
+    text-align: justify;
 }
 
 /* ****************FOOTER******************* */
@@ -602,6 +599,43 @@ footer .image-subir {
     main .jogos .jogos-flex>img {
         width: 556px;
         height: 313px;
+    }
+
+    main .progamer div.layout-grid {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .titulo-progamer {
+        width: 50%;
+    }
+
+    main .titulo-progamer h2 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    main .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 702px;
+    }
+
+    main .killjoy {
+        margin: 0;
+        width:40%;
+        height: 100%;
+    }
+
+    main .jinx {
+        margin: 0;
+        width:40%;
+        height: 100%;
     }
 
     /* *******footer********** */
