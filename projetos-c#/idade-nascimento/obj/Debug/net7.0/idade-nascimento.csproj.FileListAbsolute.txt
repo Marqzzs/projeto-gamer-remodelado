@@ -1,0 +1,15 @@
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\bin\Debug\net7.0\idade-nascimento.exe
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\bin\Debug\net7.0\idade-nascimento.deps.json
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\bin\Debug\net7.0\idade-nascimento.runtimeconfig.json
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\bin\Debug\net7.0\idade-nascimento.dll
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\bin\Debug\net7.0\idade-nascimento.pdb
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.csproj.AssemblyReference.cache
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.AssemblyInfoInputs.cache
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.AssemblyInfo.cs
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.csproj.CoreCompileInputs.cache
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.dll
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\refint\idade-nascimento.dll
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.pdb
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\idade-nascimento.genruntimeconfig.cache
+C:\Users\55358961879\Desktop\projetos-c#\idade-nascimento\obj\Debug\net7.0\ref\idade-nascimento.dll

@@ -1,0 +1,15 @@
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\bin\Debug\net7.0\exercicio-fixação.exe
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\bin\Debug\net7.0\exercicio-fixação.deps.json
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\bin\Debug\net7.0\exercicio-fixação.runtimeconfig.json
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\bin\Debug\net7.0\exercicio-fixação.dll
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\bin\Debug\net7.0\exercicio-fixação.pdb
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.csproj.AssemblyReference.cache
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.AssemblyInfoInputs.cache
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.AssemblyInfo.cs
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.csproj.CoreCompileInputs.cache
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.dll
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\refint\exercicio-fixação.dll
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.pdb
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\exercicio-fixação.genruntimeconfig.cache
+C:\Users\55358961879\Desktop\listas-c#\exercicio-fixação\obj\Debug\net7.0\ref\exercicio-fixação.dll

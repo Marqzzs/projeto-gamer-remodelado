@@ -1,0 +1,15 @@
+C:\Users\55358961879\Desktop\exercico-fixação\bin\Debug\net7.0\exercico-fixação.exe
+C:\Users\55358961879\Desktop\exercico-fixação\bin\Debug\net7.0\exercico-fixação.deps.json
+C:\Users\55358961879\Desktop\exercico-fixação\bin\Debug\net7.0\exercico-fixação.runtimeconfig.json
+C:\Users\55358961879\Desktop\exercico-fixação\bin\Debug\net7.0\exercico-fixação.dll
+C:\Users\55358961879\Desktop\exercico-fixação\bin\Debug\net7.0\exercico-fixação.pdb
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.csproj.AssemblyReference.cache
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.AssemblyInfoInputs.cache
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.AssemblyInfo.cs
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.csproj.CoreCompileInputs.cache
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.dll
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\refint\exercico-fixação.dll
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.pdb
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\exercico-fixação.genruntimeconfig.cache
+C:\Users\55358961879\Desktop\exercico-fixação\obj\Debug\net7.0\ref\exercico-fixação.dll

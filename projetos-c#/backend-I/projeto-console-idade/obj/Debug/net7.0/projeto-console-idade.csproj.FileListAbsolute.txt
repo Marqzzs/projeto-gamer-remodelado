@@ -1,0 +1,15 @@
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\bin\Debug\net7.0\projeto-console-idade.exe
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\bin\Debug\net7.0\projeto-console-idade.deps.json
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\bin\Debug\net7.0\projeto-console-idade.runtimeconfig.json
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\bin\Debug\net7.0\projeto-console-idade.dll
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\bin\Debug\net7.0\projeto-console-idade.pdb
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.csproj.AssemblyReference.cache
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.AssemblyInfoInputs.cache
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.AssemblyInfo.cs
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.csproj.CoreCompileInputs.cache
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.dll
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\refint\projeto-console-idade.dll
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.pdb
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\projeto-console-idade.genruntimeconfig.cache
+C:\Users\55358961879\Desktop\backend-I\projeto-console-idade\obj\Debug\net7.0\ref\projeto-console-idade.dll

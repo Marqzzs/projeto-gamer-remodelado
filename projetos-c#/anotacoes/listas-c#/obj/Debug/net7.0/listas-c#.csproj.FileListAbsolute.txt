@@ -1,0 +1,15 @@
+C:\Users\55358961879\Desktop\listas-c#\bin\Debug\net7.0\listas-c#.exe
+C:\Users\55358961879\Desktop\listas-c#\bin\Debug\net7.0\listas-c#.deps.json
+C:\Users\55358961879\Desktop\listas-c#\bin\Debug\net7.0\listas-c#.runtimeconfig.json
+C:\Users\55358961879\Desktop\listas-c#\bin\Debug\net7.0\listas-c#.dll
+C:\Users\55358961879\Desktop\listas-c#\bin\Debug\net7.0\listas-c#.pdb
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.csproj.AssemblyReference.cache
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.AssemblyInfoInputs.cache
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.AssemblyInfo.cs
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.csproj.CoreCompileInputs.cache
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.dll
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\refint\listas-c#.dll
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.pdb
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\listas-c#.genruntimeconfig.cache
+C:\Users\55358961879\Desktop\listas-c#\obj\Debug\net7.0\ref\listas-c#.dll

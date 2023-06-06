@@ -1,0 +1,15 @@
+C:\Users\55358961879\Desktop\projeto-console-imc\bin\Debug\net7.0\projeto-console-imc.exe
+C:\Users\55358961879\Desktop\projeto-console-imc\bin\Debug\net7.0\projeto-console-imc.deps.json
+C:\Users\55358961879\Desktop\projeto-console-imc\bin\Debug\net7.0\projeto-console-imc.runtimeconfig.json
+C:\Users\55358961879\Desktop\projeto-console-imc\bin\Debug\net7.0\projeto-console-imc.dll
+C:\Users\55358961879\Desktop\projeto-console-imc\bin\Debug\net7.0\projeto-console-imc.pdb
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.csproj.AssemblyReference.cache
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.AssemblyInfoInputs.cache
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.AssemblyInfo.cs
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.csproj.CoreCompileInputs.cache
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.dll
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\refint\projeto-console-imc.dll
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.pdb
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\projeto-console-imc.genruntimeconfig.cache
+C:\Users\55358961879\Desktop\projeto-console-imc\obj\Debug\net7.0\ref\projeto-console-imc.dll

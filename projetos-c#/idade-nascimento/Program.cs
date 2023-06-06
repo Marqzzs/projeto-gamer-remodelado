@@ -1,0 +1,2 @@
+﻿DateTime today = DateTime.Today
+
