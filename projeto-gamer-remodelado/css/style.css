@@ -1,0 +1,799 @@
+/* imports das fontes */
+
+/* TITILLIUM WEB */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+/* INTER */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+}
+
+/* Classes genéricas */
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-usuarios {
+    right: 0 !important;
+}
+
+.layout-grid {
+    /* border: 1px solid salmon; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
+
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    transition: left 0.4s ease-out;
+}
+
+/* somente links "filhos diretos" */
+header .header-bottom nav>a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav>:hover {
+    background-color: #F9AA01;
+}
+
+header .header-bottom nav>a:last-of-type {
+    border-bottom: none;
+}
+
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+header .header-bottom nav .midias-sociais {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
+    gap: 50px;
+}
+
+/* menu lateral direito - ícones */
+header .header-bottom .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 170px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: right 0.4s;
+}
+
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 606px;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rebeccapurple;
+    background-image: url(../assets/images/fundo-banner-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 40px;
+    text-shadow: 0 0 7px #FD4255;
+
+}
+
+.banner .botao-sobre {
+    width: 171px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    text-decoration: none;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+/* Sessão Jogos */
+main .jogos {
+    width: 100%;
+    height: 590px;
+    background-color: #1B1426;
+}
+
+main .jogos .jogos-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* vertical - column */
+    align-items: center;
+}
+
+/* sessão progamer */
+
+section.progamer {
+    /* apenas para visualizar o box, pois o fundo é transparente */
+    background-color: #F9AA01;
+}
+
+section.progamer .progamer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+}
+
+section.progamer h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+section.progamer hr {
+    width: 50%;
+    margin: 0 auto 60px;
+    border: 1px solid #000;
+}
+
+/* efeito borda gradient */
+section.progamer .gamers {
+    /* para servir de referência ao absolute */
+    position: relative;
+    margin-bottom: 20px;
+    /* border: 1px solid #EC4358; */
+}
+
+section.progamer .progamer-flex .gamers>img {
+    width: 314px;
+}
+
+
+section.progamer .progamer-flex .gamers #jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+section.progamer .progamer-flex .gamers #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+section.progamer .gamers .card-bkg .produto {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 231px;
+    height: 300px;
+    padding: 25px;
+    font-size: .8rem;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+section.progamer .card-bkg .produto h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: TitilliumWeb-Black;
+    /* text-shadow: 0 0 0px #fff; */
+    text-align: justify;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cards-progamer-layer .card-bkg .produto p {
+    font-family: Inter-Thin;
+    text-align: justify;
+}
+
+/********************* Notícias *********************/
+
+section.noticias {
+    background-image: url(../assets/images/backgrund_notícias-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 20px 20px;
+}
+
+section.noticias .noticias-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.noticias .noticias-flex>div {
+    width: 100%;
+    /* border: 1px solid yellowgreen; */
+}
+
+section.noticias div h2 {
+    width: 100%;
+    text-align: center;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+section.noticias div hr {
+    width: 50%;
+    margin: 30px auto 80px;
+    border: 1px solid #F9AA01;
+}
+
+/* card notícia */
+section.noticias .card-noticia {
+    max-width: 335px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right bottom, rgba(37, 26, 52, .34), rgba(5, 1, 12, .79));
+    border-radius: 8px;
+}
+
+section.noticias .card-noticia>img {
+    width: 100%;
+}
+
+section.noticias .card-noticia h3 {
+    margin: 20px 10px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+section.noticias .card-noticia p {
+    margin: 20px 10px;
+    font-family: Quicksand-Regular;
+    text-align: justify;
+}
+
+
+/* ****************FOOTER******************* */
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
+    background-image: url(../assets/images/background_footer.png);
+    background-position: top;
+    background-size: contain;
+}
+
+footer .titulos-footer>h3 {
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+}
+
+footer .titulos-footer>hr {
+    width: 102px;
+    height: 2px;
+    background-color: #F9AA01;
+    border: none;
+    border-radius: 4px;
+
+}
+
+footer #sobre {
+    width: 100%;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #sobre>img {
+    width: 110px;
+    height: 32px;
+}
+
+/*logotipo footer*/
+
+footer #sobre p {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer #midias-socias-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ****Links uteis */
+
+footer div #links-uteis {
+    height: 191px;
+    margin-top: 120px;
+}
+
+footer #menu-footer {
+    margin-top: 47px;
+    width: 325px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer #menu-footer li {
+    list-style: none;
+}
+
+footer #menu-footer li::before {
+    content: "-";
+    color: #F9AA01;
+    margin-left: -1px;
+}
+
+footer #menu-footer li>a {
+    text-decoration: none;
+    color: white;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
+
+footer #contatos {
+    height: 260px;
+    margin-top: 47px;
+}
+
+footer #contatos .titulos-footer>hr {
+    margin-bottom: 47px;
+}
+
+footer #contatos .titulos-contatos {
+    color: #F9AA01;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
+
+footer #contatos>p {
+    color: white;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+
+}
+
+input,
+button {
+    width: 100%;
+    margin-top: 47px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+#newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    backdrop-filter: blur(60px);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+#newsletter input::placeholder {
+    color: white;
+}
+
+#newsletter button {
+    background-color: #F9AA01;
+}
+
+
+/* *******footer bottom*********** */
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    margin-top: 100px;
+    position: relative;
+}
+
+footer .image-subir {
+    position: absolute;
+    right: 15px;
+    bottom: 70px;
+
+}
+
+
+
+/* **********************MEDIAS QUERES************************** */
+/* Desktops >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* HEADER  */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    /* header top */
+
+    header .header-top {
+        display: block;
+        border-bottom: 2px solid #F9AA01;
+        height: 50px;
+    }
+
+    header .header-top .midias-sociais {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        justify-content: space-between;
+        width: 415px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Inter;
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* esconde elementos desnecesarios */
+
+    header .menu-hamburger,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    /* header bottom */
+
+    header .header-bottom {
+        height: 90px;
+    }
+
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        background-color: none;
+    }
+
+    header .header-bottom nav>a {
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header-bottom nav>:hover {
+        background-color: transparent;
+        color: #F9AA01;
+        transition: .3s;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    /* main */
+
+    main {
+        margin-top: 0;
+    }
+
+    /* banner */
+
+    /* mudar a imagem do banner */
+
+    .banner {
+        background-image: url(../assets/images/fundo-banner-desktop.png);
+        background-size: cover;
+        height: 722px;
+        background-position: top;
+    }
+
+    main .banner h1 {
+        font-size: 80px;
+    }
+
+    /* sessao jogos flex */
+
+    main .jogos {
+        height: 500px;
+    }
+
+    main .jogos .jogos-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main .jogos .jogos-flex>img {
+        width: 556px;
+        height: 313px;
+    }
+
+    main .progamer div.layout-grid {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.progamer .progamer-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    section.progamer .progamer-title {
+        width: 100%;
+    }
+
+    section.progamer h2 {
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+
+    section.progamer hr {
+        width: 35%;
+    }
+
+    section.progamer .gamers {
+        height: 520px;
+        margin-right: 20px;
+        /* background: #EC4358; */
+    }
+
+
+    section.progamer .progamer-flex .gamers>img {
+        height: 100%;
+        width: auto;
+    }
+
+    section.progamer .progamer-flex .gamers #professores {
+        top: auto;
+        bottom: 90px;
+    }
+
+    /* Notícias */
+
+    section.noticias {
+        position: relative;
+        z-index: 40;
+        background-image: url(../assets/images/backgrund_notícias.png);
+    }
+
+    section.noticias:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 41;
+        width: 100%;
+        height: 100%;
+        /* Verificar a quantidade de cores */
+        background-image: linear-gradient(to right bottom, rgba(45, 24, 77, 0), rgba(45, 24, 77, .4), rgba(27, 20, 38, 1));
+        backdrop-filter: blur(10px);
+
+    }
+
+    section.noticias .noticias-flex {
+        position: relative;
+        z-index: 42;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-left: 120px;
+    }
+
+
+    section.noticias .card-noticia {
+        max-width: 220px;
+        /* margin: 0; */
+    }
+
+    section.noticias div h2 {
+        font-size: 2.5rem;
+    }
+
+    section.noticias div hr {
+        width: 25%;
+    }
+
+    /* *******footer********** */
+
+    footer #sobre img {
+        height: 57px;
+        width: 196px;
+    }
+
+    footer #sobre {
+        width: 325px;
+        height: 267px;
+        margin-top: 100px;
+    }
+
+    footer #midias-socias-footer {
+        gap: 70px;
+    }
+
+    footer #midias-socias-footer img {
+        width: 100%;
+    }
+
+    footer #links-uteis {
+        margin-left: 100px;
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+    }
+
+    footer #menu-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    footer #contatos {
+        margin-top: 99px;
+        margin-right: 30px;
+    }
+
+    footer #newsletter {
+        margin-top: 85px;
+        margin-left: 20px;
+    }
+
+}

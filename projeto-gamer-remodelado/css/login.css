@@ -1,0 +1,615 @@
+/* imports das fontes */
+
+/* TITILLIUM WEB */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+/* INTER */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+}
+
+/* Classes genéricas */
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-usuarios {
+    right: 0 !important;
+}
+
+.layout-grid {
+    /* border: 1px solid salmon; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
+
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    transition: left 0.4s ease-out;
+}
+
+/* somente links "filhos diretos" */
+header .header-bottom nav>a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav>:hover {
+    background-color: #F9AA01;
+}
+
+header .header-bottom nav>a:last-of-type {
+    border-bottom: none;
+}
+
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+header .header-bottom nav .midias-sociais {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
+    gap: 50px;
+}
+
+/* menu lateral direito - ícones */
+header .header-bottom .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 170px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: right 0.4s;
+}
+
+/* main */
+
+.login {
+    width: 100%;
+    height: 687px;
+    background-image: url(../assets/images/login/fundo-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.forms {
+    width: 335px;
+    height: 462px;
+    /* background-image: linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .4)); */
+    backdrop-filter: blur(4px);
+    background:
+        linear-gradient(to right bottom, rgba(27, 20, 38, .9), rgba(60, 3, 65, .3)) padding-box,
+        linear-gradient(90deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0)) border-box;
+    border-width: 1px;
+    border-style: solid;
+    backdrop-filter: blur(4px);
+    border-color: transparent;
+    border-radius: 8px;
+    position: relative;
+    top: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .titulo-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .titulo-login>h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 28px;
+}
+
+main .titulo-login>hr {
+    border: none;
+    background-color: #F9AA01;
+    height: 3px;
+    width: 90px;
+}
+
+main .form {
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .caixinha-imput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+    width: 280px;
+
+    background:
+        /* efeito aplicado ao ao box a partir do padding */
+        linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(239, 239, 239, .0)) padding-box,
+        /* efeito aplicado apenas na borda */
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) border-box;
+
+    border-image-slice: 1;
+    border: 1px solid transparent;
+}
+
+main .imput {
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-family: TitilliumWeb-Regular;
+    font-weight: 100;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+main input::placeholder {
+    color: white;
+}
+
+main button {
+    background-color: #F9AA01;
+    border: none;
+    border-radius: 8px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    width: 280px;
+    margin: 0;
+}
+
+/*footer*/
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
+    background-image: url(../assets/images/background_footer.png);
+    background-position: top;
+    background-size: contain;
+}
+
+footer .titulos-footer>h3 {
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+}
+
+footer .titulos-footer>hr {
+    width: 102px;
+    height: 2px;
+    background-color: #F9AA01;
+    border: none;
+    border-radius: 4px;
+
+}
+
+footer #sobre {
+    width: 100%;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #sobre>img {
+    width: 110px;
+    height: 32px;
+}
+
+/*logotipo footer*/
+
+footer #sobre p {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer #midias-socias-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ****Links uteis */
+
+footer div #links-uteis {
+    height: 191px;
+    margin-top: 120px;
+}
+
+footer #menu-footer {
+    margin-top: 47px;
+    width: 325px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer #menu-footer li {
+    list-style: none;
+}
+
+footer #menu-footer li::before {
+    content: "-";
+    color: #F9AA01;
+    margin-left: -1px;
+}
+
+footer #menu-footer li>a {
+    text-decoration: none;
+    color: white;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
+
+footer #contatos {
+    height: 260px;
+    margin-top: 47px;
+}
+
+footer #contatos .titulos-footer>hr {
+    margin-bottom: 47px;
+}
+
+footer #contatos .titulos-contatos {
+    color: #F9AA01;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
+
+footer #contatos>p {
+    color: white;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+
+}
+
+input,
+button {
+    width: 100%;
+    margin-top: 47px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+#newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    backdrop-filter: blur(60px);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+#newsletter input::placeholder {
+    color: white;
+}
+
+#newsletter button {
+    background-color: #F9AA01;
+}
+
+
+/* *******footer bottom*********** */
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    margin-top: 100px;
+    position: relative;
+}
+
+footer .image-subir {
+    position: absolute;
+    right: 15px;
+    bottom: 70px;
+
+}
+
+
+/* **********************MEDIAS QUERES************************** */
+/* Desktops >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* HEADER  */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    /* header top */
+
+    header .header-top {
+        display: block;
+        border-bottom: 2px solid #F9AA01;
+        height: 50px;
+    }
+
+    header .header-top .midias-sociais {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        justify-content: space-between;
+        width: 415px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Inter;
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* esconde elementos desnecesarios */
+
+    header .menu-hamburger,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    /* header bottom */
+
+    header .header-bottom {
+        height: 90px;
+    }
+
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        background-color: none;
+    }
+
+    header .header-bottom nav>a {
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header-bottom nav>:hover {
+        background-color: transparent;
+        color: #F9AA01;
+        transition: .3s;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    /* ****main****** */
+
+    main .login {
+        background-image: url(../assets/images/login/fundo-login-pc.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    main .forms {
+        width: 800px;
+        height: 520px;
+        position: relative;
+        top: 80px;
+        align-content: center;
+    }
+
+    main .titulo-login > h1 {
+        font-family: TitilliumWeb-Black;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    main .titulo-login>hr {
+        width: 106px;
+    }
+
+    main .caixinha-imput {
+        width: 565px;
+        height: 40px;
+        padding: 5px 10px;
+        gap: 10px;
+    }
+
+    main button {
+        width: 201px;
+        height: 40px;
+    }
+
+
+
+    /* *******footer********** */
+
+    footer #sobre img {
+        height: 57px;
+        width: 196px;
+    }
+
+    footer #sobre {
+        width: 325px;
+        height: 267px;
+        margin-top: 100px;
+    }
+
+    footer #midias-socias-footer {
+        gap: 70px;
+    }
+
+    footer #midias-socias-footer img {
+        width: 100%;
+    }
+
+    footer #links-uteis {
+        margin-left: 100px;
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+    }
+
+    footer #menu-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    footer #contatos {
+        margin-top: 99px;
+        margin-right: 30px;
+    }
+
+    footer #newsletter {
+        margin-top: 85px;
+        margin-left: 20px;
+    }
+
+}
